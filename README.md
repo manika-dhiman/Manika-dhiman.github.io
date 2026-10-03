@@ -1,39 +1,52 @@
+I am a Ph.D. candidate in Economics at the University of Delaware, on the 2026–2027 job market and expecting to graduate in May 2027. My research applies econometric methods to questions in [your research fields], drawing on training in panel data, time series, and machine learning. Alongside my doctoral work, I am a Data and Analytics Intern on the SMB Card team at JPMorgan Chase, where I use SQL, SAS, Python, and Tableau to evaluate acquisition campaigns and turn large-scale data into business strategy. Before that, I worked as a research assistant on randomized controlled trials in education and on small business surveys for regional economic development in Michigan. I am looking for roles where rigorous empirical analysis informs real decisions.
 
+#### Technical Skills: Python, SQL (Snowflake), SAS, R, Stata, Julia, Tableau, Power BI, Excel
 
-#### Technical Skills: Python, SQL, AWS, Snowflake, MATLAB
+#### Languages: English (fluent), Hindi (fluent), Russian (intermediate), Spanish (basic), German (basic)
 
-## Education
-- Ph.D., Physics | The University of Texas at Dallas (_May 2022_)								       		
-- M.S., Physics	| The University of Texas at Dallas (_December 2019_)	 			        		
-- B.S., Economics, (_minor in math_) | The University of Michigan Flint (_May 2022_)
+## Research
+### Paper 1 Title
+[Paper]()
+
+Abstract goes here.
+
+### Paper 2 Title
+[Paper]()
+
+Abstract goes here.
+
+### Paper 3 Title
+[Paper]()
+
+Abstract goes here.
 
 ## Work Experience
-**Data Scientist @ Toyota Financial Services (_June 2022 - Present_)**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
-- Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
+**Data and Analytics Intern, SMB Card @ JPMorgan Chase (_June 2025 - Present_)**
+- Analyze large-scale business banking acquisition and customer data using Snowflake SQL, SAS, Python, and Tableau to evaluate SMB campaign performance and identify behavioral patterns that inform business strategy
+- Build and enhance automated data pipelines, executive-ready dashboards, and reporting frameworks to track acquisition trends, portfolio performance, and segment-level growth opportunities
+- Apply statistical methods and data mining to evaluate offer effectiveness and optimize targeting, translating findings into business recommendations and execution plans
+- Partner with business, marketing, product, and analytics teams to turn complex business questions into structured analyses, and present results to technical and non-technical audiences
 
-**Data Science Consultant @ Shawhin Talebi Ventures LLC (_December 2020 - Present_)**
-- Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
-- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
+## Research Experience
+**Research Assistant @ University of Delaware (_June 2024 - May 2025_)**
+- Analyzed randomized controlled trial data for education research projects using econometric methods and advanced Stata programming
+- Cleaned, merged, and validated research datasets to ensure data quality and accurate estimation
+- Supported faculty research on instructional and structural models by preparing empirical tables, documenting methods, and summarizing results
 
-## Projects
-### Data-Driven EEG Band Discovery with Decision Trees
-[Publication](https://www.mdpi.com/1424-8220/22/8/3048)
+**Research Assistant @ EDA University Center for Economic Development, University of Michigan-Flint (_August 2021 - August 2022_)**
+- Analyzed small business survey data from Michigan's seven-county Thumb Region using Stata, Excel, and Power BI to assess COVID-19 challenges, PPP access, labor supply, and regional economic conditions
+- Synthesized survey findings into reports and presentations for leadership to support economic development reporting and stakeholder engagement
 
-Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
+## Teaching Experience
+**Teaching Assistant @ University of Delaware (_September 2022 - May 2024_)**
+- Led weekly discussion sections for 80+ students in econometrics, intermediate macroeconomics, intermediate microeconomics, and financial economics
+- Held office hours and structured review sessions, and graded assignments and exams for courses of 100+ students
+- Gave individualized feedback and clear explanations of empirical and theoretical material
 
-![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
+## Education
+- Ph.D., Economics (_STEM designated_) | University of Delaware (_Expected May 2027_)
+- M.S., Econometrics and Quantitative Economics | University of Delaware (_May 2024_)
+- B.S., Economics, (_minor in math, with honors_) | University of Michigan-Flint (_April 2022_)
 
-### Decoding Physical and Cognitive Impacts of Particulate Matter Concentrations at Ultra-Fine Scales
-[Publication](https://www.mdpi.com/1424-8220/22/11/4240)
-
-Used **Matlab** to train over 100 machine learning models which estimated particulate matter concentrations based on a suite of over 300 biometric variables. We found biometric variables can be used to accurately estimate particulate matter concentrations at ultra-fine spatial scales with high fidelity (r2 = 0.91) and that smaller particles are better estimated than larger ones. Inferring environmental conditions solely from biometric measurements allows us to disentangle key interactions between the environment and the body.
-
-![Bike Study](/assets/img/bike_study.jpeg)
-
-
-
-
-
-
+- [CV](/assets/Manika_Dhiman_CV.pdf)
 - [LinkedIn]()
