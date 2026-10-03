@@ -43,6 +43,7 @@ Abstract goes here.
 - Gave individualized feedback and clear explanations of empirical and theoretical material
 
 ## Education
-- M.S, Ph.D., Econometrics and Applied Economics| University of Delaware (_Expected May 2027_)
+- Ph.D, Economics| University of Delaware (_Expected May 2027_)
+- M.S, Econometrics and Applied Economics| University of Delaware (_May 2024_)
 - B.S., Economics, (_minor in math, with honors_) | University of Michigan-Flint (_April 2022_)
 
