@@ -1,8 +1,5 @@
 ## About Me
 I am a PhD Candidate in the Economics Department at University of Delaware, with specializations in labor/immigration economics, household finance and shift-share econometrics. While I'm passionate about studying the U.S. housing market, I also take keen interest in learning about consumer and small business spend and consumption behavior in the U.S. This curiosity drives my work as a Data and Analytics Intern in the Small Business Banking Card team at JP Morgan Chase, where I get to deep dive in real time U.S. small business banking data, running analytics for broad and impactful solutions while incorporating latest AI and ML developments in the field. 
-
-- [CV](/assets/Manika_Dhiman_CV.pdf)
-- [LinkedIn](www.linkedin.com/in/manikadhiman)
   
 #### Technical Skills: Python, SQL (Snowflake), SAS, R, Stata, Julia, Tableau, Power BI, Advanced Excel
 
