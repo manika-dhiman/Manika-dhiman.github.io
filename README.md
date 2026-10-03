@@ -1,8 +1,10 @@
+### About me
 I am a Ph.D. candidate in Economics at the University of Delaware, on the 2026–2027 job market and expecting to graduate in May 2027. My research applies econometric methods to questions in [your research fields], drawing on training in panel data, time series, and machine learning. Alongside my doctoral work, I am a Data and Analytics Intern on the SMB Card team at JPMorgan Chase, where I use SQL, SAS, Python, and Tableau to evaluate acquisition campaigns and turn large-scale data into business strategy. Before that, I worked as a research assistant on randomized controlled trials in education and on small business surveys for regional economic development in Michigan. I am looking for roles where rigorous empirical analysis informs real decisions.
 
-#### Technical Skills: Python, SQL (Snowflake), SAS, R, Stata, Julia, Tableau, Power BI, Excel
-
-#### Languages: English (fluent), Hindi (fluent), Russian (intermediate), Spanish (basic), German (basic)
+- [CV](/assets/Manika_Dhiman_CV.pdf)
+- [LinkedIn]()
+  
+#### Technical Skills: Python, SQL (Snowflake), SAS, R, Stata, Julia, Tableau, Power BI, Advanced Excel
 
 ## Research
 ### Paper 1 Title
@@ -21,11 +23,8 @@ Abstract goes here.
 Abstract goes here.
 
 ## Work Experience
-**Data and Analytics Intern, SMB Card @ JPMorgan Chase (_June 2025 - Present_)**
-- Analyze large-scale business banking acquisition and customer data using Snowflake SQL, SAS, Python, and Tableau to evaluate SMB campaign performance and identify behavioral patterns that inform business strategy
-- Build and enhance automated data pipelines, executive-ready dashboards, and reporting frameworks to track acquisition trends, portfolio performance, and segment-level growth opportunities
-- Apply statistical methods and data mining to evaluate offer effectiveness and optimize targeting, translating findings into business recommendations and execution plans
-- Partner with business, marketing, product, and analytics teams to turn complex business questions into structured analyses, and present results to technical and non-technical audiences
+**Data and Analytics Intern, SMB Card - JPMorgan Chase (_June 2025 - Present_)**
+
 
 ## Research Experience
 **Research Assistant @ University of Delaware (_June 2024 - May 2025_)**
@@ -48,5 +47,3 @@ Abstract goes here.
 - M.S., Econometrics and Quantitative Economics | University of Delaware (_May 2024_)
 - B.S., Economics, (_minor in math, with honors_) | University of Michigan-Flint (_April 2022_)
 
-- [CV](/assets/Manika_Dhiman_CV.pdf)
-- [LinkedIn]()
