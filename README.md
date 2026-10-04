@@ -20,21 +20,16 @@ Shift-share instruments have become a standard tool for estimating the local eff
 **Data and Analytics Intern, SMB Card - JPMorgan Chase (_June 2025 - Present_)**
 
 
-## Research Experience
-**Research Assistant @ University of Delaware (_June 2024 - May 2025_)**
-- Analyzed randomized controlled trial data for education research projects using econometric methods and advanced Stata programming
-- Cleaned, merged, and validated research datasets to ensure data quality and accurate estimation
-- Supported faculty research on instructional and structural models by preparing empirical tables, documenting methods, and summarizing results
+## RA Experience 
+- Summer 2024- Fall 2024 | Prof. Lucas (Development and Applied Economics)
+- Spring 2024 | Prof. Chikhale (Macroeconomic Modeling and Applied Economics)
+- 2021-2022 |  University of Michigan Flint @ Economic Development Center 
 
-**Research Assistant @ EDA University Center for Economic Development, University of Michigan-Flint (_August 2021 - August 2022_)**
-- Analyzed small business survey data from Michigan's seven-county Thumb Region using Stata, Excel, and Power BI to assess COVID-19 challenges, PPP access, labor supply, and regional economic conditions
-- Synthesized survey findings into reports and presentations for leadership to support economic development reporting and stakeholder engagement
-
-## Teaching Experience
-**Teaching Assistant @ University of Delaware (_September 2022 - May 2024_)**
-- Led weekly discussion sections for 80+ students in econometrics, intermediate macroeconomics, intermediate microeconomics, and financial economics
-- Held office hours and structured review sessions, and graded assignments and exams for courses of 100+ students
-- Gave individualized feedback and clear explanations of empirical and theoretical material
+## TA Experience 
+- Fall 2022 | ECON 306 Data Analysis for Economics and Business | Prof. Eisenberg
+- Spring 2023 | ECON 202 and ECON 303 Intermediate Macoreconomic Theory w/o Calculus | Prof. Toohey and Prof. Beck
+- Fall 2023 | STAT 200 Introduction to Statistics | Prof. Crissinger  
+- Spring 2024 | ECON 103 Introduction to Macroeconomics (led discussion sections weekly with ~25 students) | Prof. Hanson
 
 ## Education
 - Ph.D, Economics| University of Delaware (_Expected May 2027_)
