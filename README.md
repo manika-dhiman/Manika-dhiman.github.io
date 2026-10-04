@@ -22,8 +22,6 @@ Shift-share instruments have become a standard tool for estimating the local eff
 
 ## Research Experience
 
-<p class="intro">Three research assistant positions spanning development, macroeconomic modeling, and applied economics.</p>
-
 | Area | Dates |
 |---|---:|
 | Development and Applied Economics<br><span class="note">Prof. Lucas</span> | Summer – Fall 2024 |
@@ -31,8 +29,6 @@ Shift-share instruments have become a standard tool for estimating the local eff
 | Economic Development Center<br><span class="note">University of Michigan-Flint</span> | 2021 – 2022 |
 
 ## Teaching Experience
-
-<p class="intro">Teaching assistant for five undergraduate courses in macroeconomics, statistics, and data analysis.</p>
 
 | Course | Term |
 |---|---:|
