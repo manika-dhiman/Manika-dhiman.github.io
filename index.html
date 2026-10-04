@@ -61,8 +61,7 @@
   .btn.primary:hover { background: var(--accent-dark); }
 
   /* Sections */
-  section { padding: 56px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 64px; }
-  section:last-of-type { border-bottom: 0; }
+  section { padding: 48px 0 8px; scroll-margin-top: 64px; }
   h2 { font-family: var(--serif); font-weight: 600; font-size: 30px; line-height: 1.2; margin: 0 0 24px; }
   h3 { font-family: var(--serif); font-weight: 600; font-size: 21px; line-height: 1.3; margin: 0 0 10px; }
   h3.sub { font-family: var(--sans); font-size: 16px; color: var(--muted); margin: 36px 0 8px; }
@@ -71,9 +70,11 @@
   .lead { color: var(--muted); margin: -8px 0 20px; }
 
   /* About */
-  .about { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 56px; }
+  .about { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+  .side { display: flex; flex-direction: column; gap: 16px; }
+  .side .card { padding: 22px 24px; }
   .side h3 { font-family: var(--sans); font-size: 16px; margin: 0 0 8px; }
-  .side ul { list-style: none; margin: 0 0 28px; padding: 0; }
+  .side ul { list-style: none; margin: 0; padding: 0; }
   .side li { padding: 3px 0; }
   .side ul.bullets { list-style: disc; padding-left: 20px; }
   .side ul.bullets li { padding: 2px 0 2px 2px; }
@@ -81,26 +82,33 @@
   .edu li { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px; padding: 6px 0; }
   .edu .yr { color: var(--faint); font-size: 15px; }
   .edu .inst { display: block; color: var(--muted); font-size: 15px; }
-  .skills { color: var(--muted); }
+  .skills { color: var(--muted); margin: 0; }
+
+  /* White boxes */
+  .card { background: var(--wash); border-radius: 10px; padding: 28px 30px; }
+  .card p:last-child { margin-bottom: 0; }
+  .card + .card { margin-top: 20px; }
+  .side .card + .card { margin-top: 0; }
 
   /* Papers */
-  .paper { background: var(--wash); border-radius: 10px; padding: 28px 30px; margin: 0 0 8px; }
   .tag { display: inline-block; font-size: 14px; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 2px 10px; border-radius: 4px; margin: 0 0 12px; }
   .links { display: flex; flex-wrap: wrap; gap: 20px; font-size: 15.5px; font-weight: 600; margin: 4px 0 0; }
-  .wip h3 { font-size: 19px; margin-bottom: 6px; }
-  details { margin: 0 0 8px; }
-  summary { cursor: pointer; color: var(--accent); font-size: 15.5px; font-weight: 600; width: fit-content; }
-  details p { margin-top: 10px; }
 
   /* Experience and teaching rows */
   .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
   .rows li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; padding: 14px 0; border-bottom: 1px solid var(--line); }
   .rows .note { display: block; color: var(--muted); font-size: 15.5px; margin-top: 2px; }
   .rows .when { color: var(--faint); font-size: 15px; white-space: nowrap; text-align: right; }
+  .card .rows { border-top: 0; }
+  .card .rows li:first-child { padding-top: 4px; }
+  .card .rows li:last-child { border-bottom: 0; padding-bottom: 0; }
+  .card h3.sub { margin-top: 28px; }
+  .card h3.sub:first-child { margin-top: 0; }
 
   /* Contact and footer */
   .contact p { margin: 0 0 8px; }
-  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--faint); font-size: 14.5px; }
+  #contact { padding-bottom: 48px; }
+  footer { margin-top: 0; border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--faint); font-size: 14.5px; }
 
   @media (max-width: 760px) {
     body { font-size: 16px; }
@@ -110,10 +118,11 @@
     .hero img { width: 128px; height: 128px; }
     .hero h1 { font-size: 36px; }
     .about { grid-template-columns: 1fr; gap: 28px; }
-    .paper { padding: 22px 20px; }
+    .card, .side .card { padding: 22px 20px; }
+    .about { gap: 16px; }
     .rows li { grid-template-columns: 1fr; gap: 2px; }
     .rows .when { text-align: left; }
-    section { padding: 44px 0; }
+    section { padding: 40px 0 4px; }
   }
 </style>
 </head>
@@ -154,28 +163,34 @@
     </div>
 
     <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
       <div class="about">
-        <div>
-          <h2 id="about-title">About</h2>
+        <div class="card">
           <p>I am a PhD candidate in Economics at the University of Delaware, specializing in labor and immigration economics, household finance, and shift-share econometrics.</p>
           <p>My job market paper studies how immigration affects rents and home values in the United States, how the effects differ by immigrants' educational attainment, and why home values respond more in markets with more restrictive land-use regulation.</p>
           <p>Alongside my research, I am a Data and Analytics Intern on the Small Business Banking Card team at JPMorgan Chase, where I analyze real-time U.S. small business banking data while incorporating the latest AI and ML developments in the field.</p>
         </div>
         <aside class="side" aria-label="Profile details">
-          <h3>Research interests</h3>
-          <ul class="bullets">
-            <li>Labor and Immigration Economics</li>
-            <li>Household Finance</li>
-            <li>Econometrics</li>
-          </ul>
-          <h3>Education</h3>
-          <ul class="edu">
-            <li><span class="yr">Expected 2027</span><span>Ph.D., Economics<span class="inst">University of Delaware</span></span></li>
-            <li><span class="yr">2024</span><span>M.S., Econometrics and Applied Economics<span class="inst">University of Delaware</span></span></li>
-            <li><span class="yr">2022</span><span>B.S., Economics, with honors<span class="inst">University of Michigan-Flint, minor in mathematics</span></span></li>
-          </ul>
-          <h3>Technical skills</h3>
-          <p class="skills">Python, SQL (Snowflake), SAS, R, Stata, Julia, Tableau, Power BI, Advanced Excel</p>
+          <div class="card">
+            <h3>Research interests</h3>
+            <ul class="bullets">
+              <li>Labor and Immigration Economics</li>
+              <li>Household Finance</li>
+              <li>Econometrics</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Education</h3>
+            <ul class="edu">
+              <li><span class="yr">Expected 2027</span><span>Ph.D., Economics<span class="inst">University of Delaware</span></span></li>
+              <li><span class="yr">2024</span><span>M.S., Econometrics and Applied Economics<span class="inst">University of Delaware</span></span></li>
+              <li><span class="yr">2022</span><span>B.S., Economics, with honors<span class="inst">University of Michigan-Flint, minor in mathematics</span></span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Technical skills</h3>
+            <p class="skills">Python, SQL (Snowflake), SAS, R, Stata, Julia, Tableau, Power BI, Advanced Excel</p>
+          </div>
         </aside>
       </div>
     </section>
@@ -183,7 +198,7 @@
     <section id="research" aria-labelledby="research-title">
       <h2 id="research-title">Research</h2>
 
-      <article class="paper">
+      <article class="card paper">
         <span class="tag">Job market paper</span>
         <h3>Effect of Immigration on the US Housing Market</h3>
         <p>While a large literature has studied the impact of immigration on the U.S. housing market and found positive effects on rents and home values, this paper adds to it with a heterogeneity analysis by the educational attainment of foreign-born workers, motivated by recent evidence on the role of education in immigrants' upward mobility. Using a share-based approach that draws on recent advances in the shift–share literature, this paper finds that immigration raises rents and home values in the United States, as evident in the Zillow data, and that the home-value response is larger in markets with more restrictive land-use regulation. In addition, the paper presents results using shares from three base years (1980, 1990, and 2000) for all immigrants and for college- and less college-educated immigrants, shedding light on the endogeneity mechanisms behind the shift-share instrument.</p>
@@ -193,13 +208,10 @@
         </div>
       </article>
 
-      <h3 class="sub">Work in progress</h3>
-      <article class="wip">
+      <article class="card paper">
+        <span class="tag">Work in progress</span>
         <h3>Bias–Variance Trade-Offs with Shift-Share Instrumental Variables</h3>
-        <details>
-          <summary>Abstract</summary>
-          <p>Shift-share instruments have become a standard tool for estimating the local effects of immigration, yet researchers must make several design choices when constructing them: whether to use fixed or contemporaneous shares, annual or long differences, and which controls, weights, and samples to apply. This chapter examines how these choices shape the bias–variance tradeoff in shift-share IV designs. Preliminary evidence from the first chapter shows that these choices matter: year-on-year differences produce much stronger and more precise first stages than five-year differences, while contemporaneous shares yield the strongest first stage but raise endogeneity concerns. Building on this evidence, the chapter compares and replicates existing immigration SSIV studies, uses simulations to assess how each choice affects bias and precision, and extends the analysis to ACS data.</p>
-        </details>
+        <p>Shift-share instruments have become a standard tool for estimating the local effects of immigration, yet researchers must make several design choices when constructing them: whether to use fixed or contemporaneous shares, annual or long differences, and which controls, weights, and samples to apply. This chapter examines how these choices shape the bias–variance tradeoff in shift-share IV designs. Preliminary evidence from the first chapter shows that these choices matter: year-on-year differences produce much stronger and more precise first stages than five-year differences, while contemporaneous shares yield the strongest first stage but raise endogeneity concerns. Building on this evidence, the chapter compares and replicates existing immigration SSIV studies, uses simulations to assess how each choice affects bias and precision, and extends the analysis to ACS data.</p>
         <div class="links">
           <a href="assets/Dhiman_SSIV.pdf">Latest draft (PDF)</a>
           <a href="assets/Dhiman_SSIV_slides.pdf">Slides (PDF)</a>
@@ -210,52 +222,56 @@
     <section id="experience" aria-labelledby="experience-title">
       <h2 id="experience-title">Experience</h2>
 
-      <h3 class="sub">Industry</h3>
-      <ul class="rows">
-        <li>
-          <div><strong>Data and Analytics Intern</strong>, JPMorgan Chase<span class="note">Small Business Banking Card team. Analytics on real-time U.S. small business banking data, incorporating recent AI and ML developments.</span></div>
-          <span class="when">June 2025 – Present</span>
-        </li>
-      </ul>
+      <div class="card">
+        <h3 class="sub">Industry</h3>
+        <ul class="rows">
+          <li>
+            <div><strong>Data and Analytics Intern</strong>, JPMorgan Chase<span class="note">Small Business Banking Card team. Analytics on real-time U.S. small business banking data, incorporating recent AI and ML developments.</span></div>
+            <span class="when">June 2025 – Present</span>
+          </li>
+        </ul>
 
-      <h3 class="sub">Research assistant</h3>
-      <ul class="rows">
-        <li>
-          <div><strong>Development and Applied Economics</strong><span class="note">Prof. Lucas</span></div>
-          <span class="when">Summer – Fall 2024</span>
-        </li>
-        <li>
-          <div><strong>Macroeconomic Modeling and Applied Economics</strong><span class="note">Prof. Chikhale</span></div>
-          <span class="when">Spring 2024</span>
-        </li>
-        <li>
-          <div><strong>Economic Development Center</strong><span class="note">University of Michigan-Flint</span></div>
-          <span class="when">2021 – 2022</span>
-        </li>
-      </ul>
+        <h3 class="sub">Research assistant</h3>
+        <ul class="rows">
+          <li>
+            <div><strong>Development and Applied Economics</strong><span class="note">Prof. Lucas</span></div>
+            <span class="when">Summer – Fall 2024</span>
+          </li>
+          <li>
+            <div><strong>Macroeconomic Modeling and Applied Economics</strong><span class="note">Prof. Chikhale</span></div>
+            <span class="when">Spring 2024</span>
+          </li>
+          <li>
+            <div><strong>Economic Development Center</strong><span class="note">University of Michigan-Flint</span></div>
+            <span class="when">2021 – 2022</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="teaching" aria-labelledby="teaching-title">
       <h2 id="teaching-title">Teaching</h2>
       <p class="lead">Teaching assistant for five undergraduate courses in macroeconomics, statistics, and data analysis.</p>
-      <ul class="rows">
-        <li>
-          <div><strong>ECON 103 Introduction to Macroeconomics</strong><span class="note">Prof. Hanson. Led weekly discussion sections of about 25 students.</span></div>
-          <span class="when">Spring 2024</span>
-        </li>
-        <li>
-          <div><strong>STAT 200 Introduction to Statistics</strong><span class="note">Prof. Crissinger</span></div>
-          <span class="when">Fall 2023</span>
-        </li>
-        <li>
-          <div><strong>ECON 202 and 303 Intermediate Macroeconomic Theory without Calculus</strong><span class="note">Prof. Toohey and Prof. Beck</span></div>
-          <span class="when">Spring 2023</span>
-        </li>
-        <li>
-          <div><strong>ECON 306 Data Analysis for Economics and Business</strong><span class="note">Prof. Eisenberg</span></div>
-          <span class="when">Fall 2022</span>
-        </li>
-      </ul>
+      <div class="card">
+        <ul class="rows">
+          <li>
+            <div><strong>ECON 103 Introduction to Macroeconomics</strong><span class="note">Prof. Hanson. Led weekly discussion sections of about 25 students.</span></div>
+            <span class="when">Spring 2024</span>
+          </li>
+          <li>
+            <div><strong>STAT 200 Introduction to Statistics</strong><span class="note">Prof. Crissinger</span></div>
+            <span class="when">Fall 2023</span>
+          </li>
+          <li>
+            <div><strong>ECON 202 and 303 Intermediate Macroeconomic Theory without Calculus</strong><span class="note">Prof. Toohey and Prof. Beck</span></div>
+            <span class="when">Spring 2023</span>
+          </li>
+          <li>
+            <div><strong>ECON 306 Data Analysis for Economics and Business</strong><span class="note">Prof. Eisenberg</span></div>
+            <span class="when">Fall 2022</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="contact" class="contact" aria-labelledby="contact-title">
@@ -263,7 +279,7 @@
       <p><a href="mailto:manikad@udel.edu">manikad@udel.edu</a></p>
       <p>Department of Economics, University of Delaware</p>
       <div class="links">
-        <a href="https://www.linkedin.com/in/manikadhiman" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://manika-dhiman.github.io/assets/Manika_Dhiman_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
       </div>
     </section>
