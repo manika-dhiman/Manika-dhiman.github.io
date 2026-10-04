@@ -3,11 +3,11 @@
 
 @import "{{ site.theme }}";
 
-/* Cleaner tables for Research, Teaching, and Education */
+/* Work, Research, Teaching, and Education tables */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0 0 24px;
+  margin: 0 0 28px;
   font-size: 0.95em;
 }
 
@@ -23,25 +23,42 @@ td {
   text-align: left;
   vertical-align: top;
   line-height: 1.45;
-  padding: 8px 12px 8px 0;
+  padding: 9px 12px 9px 0;
   border-bottom: 1px solid #f0f0f0;
 }
 
-/* Dates in the first column stay on one line and read as secondary */
+/* Main item in dark text so it is read first */
 td:first-child {
+  color: #222;
+}
+
+/* Dates in the last column: grey, right-aligned, on one line */
+th:last-child,
+td:last-child {
+  text-align: right;
   white-space: nowrap;
+  padding-right: 0;
+}
+
+td:last-child {
   color: #9a9a9a;
 }
 
-/* Small grey note under a course name */
+/* Grey detail line under the main item */
 .note {
   color: #9a9a9a;
   font-size: 0.92em;
 }
 
-/* On small phones, let dates wrap so tables don't overflow */
+/* One-line summary under a section heading */
+.intro {
+  margin: -8px 0 14px;
+}
+
+/* On small phones, let dates wrap so tables fit the screen */
 @media (max-width: 480px) {
-  td:first-child {
+  th:last-child,
+  td:last-child {
     white-space: normal;
   }
 }
