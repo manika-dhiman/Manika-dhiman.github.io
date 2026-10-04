@@ -16,29 +16,35 @@ Shift-share instruments have become a standard tool for estimating the local eff
 
 ## Work Experience
 
-**Data and Analytics Intern, SMB Card**, JPMorgan Chase (_June 2025 – Present_)
+| Role | Dates |
+|---|---:|
+| Data and Analytics Intern, JPMorgan Chase<br><span class="note">Small Business Banking Card team. Analytics on real-time U.S. small business banking data, incorporating recent AI and ML developments.</span> | June 2025 – Present |
 
 ## Research Experience
 
-| Term | Supervisor | Area |
-|---|---|---|
-| Summer – Fall 2024 | Prof. Lucas | Development and Applied Economics |
-| Spring 2024 | Prof. Chikhale | Macroeconomic Modeling and Applied Economics |
-| 2021 – 2022 | Economic Development Center, University of Michigan-Flint | Economic Development |
+<p class="intro">Three research assistant positions spanning development, macroeconomic modeling, and applied economics.</p>
+
+| Area | Dates |
+|---|---:|
+| Development and Applied Economics<br><span class="note">Prof. Lucas</span> | Summer – Fall 2024 |
+| Macroeconomic Modeling and Applied Economics<br><span class="note">Prof. Chikhale</span> | Spring 2024 |
+| Economic Development Center<br><span class="note">University of Michigan-Flint</span> | 2021 – 2022 |
 
 ## Teaching Experience
 
-| Term | Course | Instructor |
-|---|---|---|
-| Spring 2024 | ECON 103 Introduction to Macroeconomics<br><span class="note">Led weekly discussion sections of about 25 students</span> | Prof. Hanson |
-| Fall 2023 | STAT 200 Introduction to Statistics | Prof. Crissinger |
-| Spring 2023 | ECON 202 and ECON 303 Intermediate Macroeconomic Theory without Calculus | Prof. Toohey and Prof. Beck |
-| Fall 2022 | ECON 306 Data Analysis for Economics and Business | Prof. Eisenberg |
+<p class="intro">Teaching assistant for five undergraduate courses in macroeconomics, statistics, and data analysis.</p>
+
+| Course | Term |
+|---|---:|
+| **ECON 103** Introduction to Macroeconomics<br><span class="note">Prof. Hanson. Led weekly discussion sections of about 25 students.</span> | Spring 2024 |
+| **STAT 200** Introduction to Statistics<br><span class="note">Prof. Crissinger</span> | Fall 2023 |
+| **ECON 202 and 303** Intermediate Macroeconomic Theory without Calculus<br><span class="note">Prof. Toohey and Prof. Beck</span> | Spring 2023 |
+| **ECON 306** Data Analysis for Economics and Business<br><span class="note">Prof. Eisenberg</span> | Fall 2022 |
 
 ## Education
 
-| Year | Degree | Institution |
-|---|---|---|
-| Expected May 2027 | Ph.D., Economics | University of Delaware |
-| May 2024 | M.S., Econometrics and Applied Economics | University of Delaware |
-| April 2022 | B.S., Economics, minor in mathematics, with honors | University of Michigan-Flint |
+| Degree | Year |
+|---|---:|
+| Ph.D., Economics<br><span class="note">University of Delaware</span> | Expected 2027 |
+| M.S., Econometrics and Applied Economics<br><span class="note">University of Delaware</span> | 2024 |
+| B.S., Economics, with honors<br><span class="note">University of Michigan-Flint, minor in mathematics</span> | 2022 |
