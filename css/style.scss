@@ -3,40 +3,45 @@
 
 @import "{{ site.theme }}";
 
-/* Date-column entries for Work, Research, Teaching, and Education */
-.entry {
-  display: grid;
-  grid-template-columns: 110px minmax(0, 1fr);
-  column-gap: 16px;
-  padding: 7px 0;
-  line-height: 1.45;
+/* Cleaner tables for Research, Teaching, and Education */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 24px;
+  font-size: 0.95em;
 }
 
-.entry-date {
+th {
+  color: #222;
+  font-weight: 700;
+  text-align: left;
+  padding: 6px 12px 6px 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.45;
+  padding: 8px 12px 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Dates in the first column stay on one line and read as secondary */
+td:first-child {
+  white-space: nowrap;
+  color: #9a9a9a;
+}
+
+/* Small grey note under a course name */
+.note {
   color: #9a9a9a;
   font-size: 0.92em;
 }
 
-.entry-title {
-  color: #222;
-  font-weight: 700;
-}
-
-.entry-detail {
-  color: #727272;
-  font-size: 0.95em;
-}
-
-/* Extra space between sections that use entries */
-.entry + h2,
-.entry + h3 {
-  margin-top: 1.6em;
-}
-
-/* On small phones, put the date above the details */
+/* On small phones, let dates wrap so tables don't overflow */
 @media (max-width: 480px) {
-  .entry {
-    grid-template-columns: 1fr;
-    row-gap: 2px;
+  td:first-child {
+    white-space: normal;
   }
 }
