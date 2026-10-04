@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manika Dhiman | PhD Candidate in Economics, University of Delaware</title>
+<meta name="description" content="Manika Dhiman is a PhD candidate in economics at the University of Delaware studying immigration, housing markets, and household finance.">
+<meta property="og:title" content="Manika Dhiman">
+<meta property="og:description" content="PhD Candidate in Economics, University of Delaware">
+<meta property="og:image" content="https://manika-dhiman.github.io/1_images/3_profile_edited.jpeg">
+<meta property="og:url" content="https://manika-dhiman.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c2430;
+    --muted: #5b6574;
+    --faint: #8a93a0;
+    --line: #e3e6eb;
+    --wash: #f5f7f9;
+    --accent: #1d4f91;
+    --accent-dark: #163e73;
+    --accent-soft: #e8eef7;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: #fff; color: var(--ink); font: 17px/1.65 var(--sans); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  strong { font-weight: 600; }
+  .skip { position: absolute; left: -999px; }
+  .skip:focus { left: 16px; top: 12px; z-index: 20; background: #fff; padding: 6px 10px; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 28px; }
+
+  /* Top bar */
+  .bar { position: sticky; top: 0; z-index: 10; background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid var(--line); }
+  .bar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; min-height: 60px; }
+  .brand { font-family: var(--serif); font-weight: 600; font-size: 19px; color: var(--ink); }
+  .brand:hover { text-decoration: none; }
+  .bar ul { display: flex; flex-wrap: wrap; gap: 4px 22px; list-style: none; margin: 0; padding: 0; }
+  .bar ul a { color: var(--muted); font-size: 15.5px; }
+  .bar ul a:hover { color: var(--ink); text-decoration: none; }
+
+  /* Header with photo */
+  .hero { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 40px; align-items: center; padding: 64px 0 52px; border-bottom: 1px solid var(--line); }
+  .hero img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; background: var(--wash); }
+  .hero h1 { font-family: var(--serif); font-weight: 600; font-size: 46px; line-height: 1.08; letter-spacing: -0.01em; margin: 0 0 10px; }
+  .hero .role { font-size: 19px; margin: 0; }
+  .hero .also { color: var(--muted); margin: 2px 0 22px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-block; padding: 8px 18px; border: 1px solid var(--accent); border-radius: 6px; font-size: 15.5px; font-weight: 600; }
+  .btn:hover { text-decoration: none; background: var(--accent-soft); }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.primary:hover { background: var(--accent-dark); }
+
+  /* Sections */
+  section { padding: 56px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 64px; }
+  section:last-of-type { border-bottom: 0; }
+  h2 { font-family: var(--serif); font-weight: 600; font-size: 30px; line-height: 1.2; margin: 0 0 24px; }
+  h3 { font-family: var(--serif); font-weight: 600; font-size: 21px; line-height: 1.3; margin: 0 0 10px; }
+  h3.sub { font-family: var(--sans); font-size: 16px; color: var(--muted); margin: 36px 0 8px; }
+  h2 + h3.sub { margin-top: 0; }
+  p { margin: 0 0 14px; }
+  .lead { color: var(--muted); margin: -8px 0 20px; }
+
+  /* About */
+  .about { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 56px; }
+  .side h3 { font-family: var(--sans); font-size: 16px; margin: 0 0 8px; }
+  .side ul { list-style: none; margin: 0 0 28px; padding: 0; }
+  .side li { padding: 3px 0; }
+  .edu li { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px; padding: 6px 0; }
+  .edu .yr { color: var(--faint); font-size: 15px; }
+  .edu .inst { display: block; color: var(--muted); font-size: 15px; }
+  .skills { color: var(--muted); }
+
+  /* Papers */
+  .paper { background: var(--wash); border-radius: 10px; padding: 28px 30px; margin: 0 0 8px; }
+  .tag { display: inline-block; font-size: 14px; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 2px 10px; border-radius: 4px; margin: 0 0 12px; }
+  .links { display: flex; flex-wrap: wrap; gap: 20px; font-size: 15.5px; font-weight: 600; margin: 4px 0 0; }
+  .wip h3 { font-size: 19px; margin-bottom: 6px; }
+  details { margin: 0 0 8px; }
+  summary { cursor: pointer; color: var(--accent); font-size: 15.5px; font-weight: 600; width: fit-content; }
+  details p { margin-top: 10px; }
+
+  /* Experience and teaching rows */
+  .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .rows li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .rows .note { display: block; color: var(--muted); font-size: 15.5px; margin-top: 2px; }
+  .rows .when { color: var(--faint); font-size: 15px; white-space: nowrap; text-align: right; }
+
+  /* Contact and footer */
+  .contact p { margin: 0 0 8px; }
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--faint); font-size: 14.5px; }
+
+  @media (max-width: 760px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 20px; }
+    .bar .wrap { padding-top: 10px; padding-bottom: 10px; }
+    .hero { grid-template-columns: 1fr; gap: 24px; padding: 40px 0 36px; }
+    .hero img { width: 128px; height: 128px; }
+    .hero h1 { font-size: 36px; }
+    .about { grid-template-columns: 1fr; gap: 28px; }
+    .paper { padding: 22px 20px; }
+    .rows li { grid-template-columns: 1fr; gap: 2px; }
+    .rows .when { text-align: left; }
+    section { padding: 44px 0; }
+  }
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Manika Dhiman</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="https://manika-dhiman.github.io/assets/Manika_Dhiman_CV.pdf" target="_blank" rel="noopener">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <div class="hero">
+      <img src="https://manika-dhiman.github.io/1_images/3_profile_edited.jpeg" alt="Portrait of Manika Dhiman">
+      <div>
+        <h1>Manika Dhiman</h1>
+        <p class="role">PhD Candidate in Economics, University of Delaware</p>
+        <p class="also">Data and Analytics, JPMorgan Chase</p>
+        <div class="actions">
+          <a class="btn primary" href="https://manika-dhiman.github.io/assets/Manika_Dhiman_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <a class="btn" href="#research">Job market paper</a>
+          <!-- Replace your-profile with your LinkedIn address (also in the Contact section below) -->
+          <a class="btn" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="about">
+        <div>
+          <h2 id="about-title">About</h2>
+          <p>I am a PhD candidate in Economics at the University of Delaware, specializing in labor and immigration economics, household finance, and shift-share econometrics.</p>
+          <p>My job market paper studies how immigration affects rents and home values in the United States, how the effects differ by immigrants' educational attainment, and why home values respond more in markets with more restrictive land-use regulation.</p>
+          <p>Alongside my research, I am a Data and Analytics Intern on the Small Business Banking Card team at JPMorgan Chase, where I analyze real-time U.S. small business banking data while incorporating the latest AI and ML developments in the field.</p>
+        </div>
+        <aside class="side" aria-label="Profile details">
+          <h3>Research interests</h3>
+          <ul>
+            <li>Labor and Immigration Economics</li>
+            <li>Household Finance</li>
+            <li>Econometrics</li>
+          </ul>
+          <h3>Education</h3>
+          <ul class="edu">
+            <li><span class="yr">Expected 2027</span><span>Ph.D., Economics<span class="inst">University of Delaware</span></span></li>
+            <li><span class="yr">2024</span><span>M.S., Econometrics and Applied Economics<span class="inst">University of Delaware</span></span></li>
+            <li><span class="yr">2022</span><span>B.S., Economics, with honors<span class="inst">University of Michigan-Flint, minor in mathematics</span></span></li>
+          </ul>
+          <h3>Technical skills</h3>
+          <p class="skills">Python, SQL (Snowflake), SAS, R, Stata, Julia, Tableau, Power BI, Advanced Excel</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+
+      <article class="paper">
+        <span class="tag">Job market paper</span>
+        <h3>Effect of Immigration on the US Housing Market</h3>
+        <p>While a large literature has studied the impact of immigration on the U.S. housing market and found positive effects on rents and home values, this paper adds to it with a heterogeneity analysis by the educational attainment of foreign-born workers, motivated by recent evidence on the role of education in immigrants' upward mobility. Using a share-based approach that draws on recent advances in the shift–share literature, this paper finds that immigration raises rents and home values in the United States, as evident in the Zillow data, and that the home-value response is larger in markets with more restrictive land-use regulation. In addition, the paper presents results using shares from three base years (1980, 1990, and 2000) for all immigrants and for college- and less college-educated immigrants, shedding light on the endogeneity mechanisms behind the shift-share instrument.</p>
+        <div class="links">
+          <a href="assets/Dhiman_JMP.pdf">Latest draft (PDF)</a>
+          <a href="assets/Dhiman_JMP_slides.pdf">Slides (PDF)</a>
+        </div>
+      </article>
+
+      <h3 class="sub">Work in progress</h3>
+      <article class="wip">
+        <h3>Bias–Variance Trade-Offs with Shift-Share Instrumental Variables</h3>
+        <details>
+          <summary>Abstract</summary>
+          <p>Shift-share instruments have become a standard tool for estimating the local effects of immigration, yet researchers must make several design choices when constructing them: whether to use fixed or contemporaneous shares, annual or long differences, and which controls, weights, and samples to apply. This chapter examines how these choices shape the bias–variance tradeoff in shift-share IV designs. Preliminary evidence from the first chapter shows that these choices matter: year-on-year differences produce much stronger and more precise first stages than five-year differences, while contemporaneous shares yield the strongest first stage but raise endogeneity concerns. Building on this evidence, the chapter compares and replicates existing immigration SSIV studies, uses simulations to assess how each choice affects bias and precision, and extends the analysis to ACS data.</p>
+        </details>
+        <div class="links">
+          <a href="assets/Dhiman_SSIV.pdf">Latest draft (PDF)</a>
+          <a href="assets/Dhiman_SSIV_slides.pdf">Slides (PDF)</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+
+      <h3 class="sub">Industry</h3>
+      <ul class="rows">
+        <li>
+          <div><strong>Data and Analytics Intern</strong>, JPMorgan Chase<span class="note">Small Business Banking Card team. Analytics on real-time U.S. small business banking data, incorporating recent AI and ML developments.</span></div>
+          <span class="when">June 2025 – Present</span>
+        </li>
+      </ul>
+
+      <h3 class="sub">Research assistant</h3>
+      <ul class="rows">
+        <li>
+          <div><strong>Development and Applied Economics</strong><span class="note">Prof. Lucas</span></div>
+          <span class="when">Summer – Fall 2024</span>
+        </li>
+        <li>
+          <div><strong>Macroeconomic Modeling and Applied Economics</strong><span class="note">Prof. Chikhale</span></div>
+          <span class="when">Spring 2024</span>
+        </li>
+        <li>
+          <div><strong>Economic Development Center</strong><span class="note">University of Michigan-Flint</span></div>
+          <span class="when">2021 – 2022</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="teaching" aria-labelledby="teaching-title">
+      <h2 id="teaching-title">Teaching</h2>
+      <p class="lead">Teaching assistant for five undergraduate courses in macroeconomics, statistics, and data analysis.</p>
+      <ul class="rows">
+        <li>
+          <div><strong>ECON 103</strong> Introduction to Macroeconomics<span class="note">Prof. Hanson. Led weekly discussion sections of about 25 students.</span></div>
+          <span class="when">Spring 2024</span>
+        </li>
+        <li>
+          <div><strong>STAT 200</strong> Introduction to Statistics<span class="note">Prof. Crissinger</span></div>
+          <span class="when">Fall 2023</span>
+        </li>
+        <li>
+          <div><strong>ECON 202 and 303</strong> Intermediate Macroeconomic Theory without Calculus<span class="note">Prof. Toohey and Prof. Beck</span></div>
+          <span class="when">Spring 2023</span>
+        </li>
+        <li>
+          <div><strong>ECON 306</strong> Data Analysis for Economics and Business<span class="note">Prof. Eisenberg</span></div>
+          <span class="when">Fall 2022</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <!-- To show your email, delete the comment markers around the next line and fill in your address -->
+      <!-- <p><a href="mailto:YOUR-EMAIL@udel.edu">YOUR-EMAIL@udel.edu</a></p> -->
+      <p>Department of Economics, University of Delaware</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://manika-dhiman.github.io/assets/Manika_Dhiman_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Manika Dhiman</div>
+</footer>
+</body>
+</html>
